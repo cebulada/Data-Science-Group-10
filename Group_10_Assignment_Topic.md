@@ -44,7 +44,7 @@ The combination of these 3 datasets will provide us with great insights into the
 
 ## Data Sources:
 
-### A. OPEN DATA TORONTO - [link]()
+### A. OPEN DATA TORONTO - [link](https://open.toronto.ca/)
 
 #### 1. Toronto Fire Services Basic Incident Details - [link](https://open.toronto.ca/dataset/fire-services-basic-incident-details/)
 - **DOWNLOAD**:
@@ -67,13 +67,16 @@ The combination of these 3 datasets will provide us with great insights into the
 
 #### 3. Toronto Weather Stations Historical Weather
 - **DOCUMENTATION**:
-    - documentation to access data can be found [here](ftp://client_climate@ftp.tor.ec.gc.ca/Pub/Get_More_Data_Plus_de_donnees/Readme.txt)
-    - more resources for data access is found in this `ftp://` [folder](ftp://client_climate@ftp.tor.ec.gc.ca/Pub/Get_More_Data_Plus_de_donnees/)
+    - documentation to access data can be found here
+        - ```ftp://client_climate@ftp.tor.ec.gc.ca/Pub/Get_More_Data_Plus_de_donnees/Readme.txt```
+    - more resources for data access is found in this `ftp://` folder
+        - ```ftp://client_climate@ftp.tor.ec.gc.ca/Pub/Get_More_Data_Plus_de_donnees/```
     - one can download daily weather data using `wget` module for the years 2010 - 2020
     ```bash
     for year in `seq 2010 2020`;do for month in `seq 1 1`;do wget --content-disposition "https://climate.weather.gc.ca/climate_data/bulk_data_e.html?format=csv&stationID=${STATION_ID}&Year=${year}&Month=${month}&Day=14&timeframe=2&submit= Download+Data" ;done;done
     ```
-    - STATION_ID can be found in the following [download](ftp://client_climate@ftp.tor.ec.gc.ca/Pub/Get_More_Data_Plus_de_donnees/Station%20Inventory%20EN.csv)
+    - STATION_ID can be found in the following place
+        - ```ftp://client_climate@ftp.tor.ec.gc.ca/Pub/Get_More_Data_Plus_de_donnees/Station%20Inventory%20EN.csv```
         - we will be using ```[31688, 48549, 26953]``` STATION_ID's which correspond to:
             - Toronto City Weather Station
             - Toronto City Centre Weather Station
