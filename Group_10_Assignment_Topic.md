@@ -63,9 +63,17 @@ The combination of these 3 datasets will provide us with great insights into the
 - **NOTE**:
     - [geopandas](https://geopandas.readthedocs.io/en/latest/index.html) Python library will be used to read it in as a DataFrame
 
+#### 3. Toronto Fire Hydrants - [link](https://open.toronto.ca/dataset/fire-hydrants/)
+- **DOWNLOAD**:
+    - [link](https://ckan0.cf.opendata.inter.prod-toronto.ca/download_resource/beaaa552-6338-4c81-95be-411e6cef6b89?format=csv&projection=4326)
+- **CONTENTS**:
+    - csv file of gps coordinates
+- **NOTE**:
+    - this dataset may be used to further supplant the Toronto Fire Services Stations gps coordinates
+
 ### B. Government of Canada - Historical Climate Data - [link](https://climate.weather.gc.ca/)
 
-#### 3. Toronto Weather Stations Historical Weather
+#### 4. Toronto Weather Stations Historical Weather
 - **DOCUMENTATION**:
     - documentation to access data can be found here
         - ```ftp://client_climate@ftp.tor.ec.gc.ca/Pub/Get_More_Data_Plus_de_donnees/Readme.txt```
