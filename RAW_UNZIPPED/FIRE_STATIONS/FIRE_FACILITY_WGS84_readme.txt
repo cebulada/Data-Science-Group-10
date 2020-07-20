@@ -1,0 +1,14 @@
+FIRE_FACILITY_WGS84_readme
+ 
+
+Column name  (Description)
+======================================
+NAME = NAME
+ADDRESS = ADDRESS
+X = X
+Y = Y
+LATITUDE = LATITUDE
+LONGITUDE = LONGITUDE
+WARD_NAME = WARD_NAME
+MUN_NAME = MUNICIPALITY_NAME
+OBJECTID = OBJECTID

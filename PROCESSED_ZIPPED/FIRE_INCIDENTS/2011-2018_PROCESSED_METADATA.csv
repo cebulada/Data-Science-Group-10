@@ -1,0 +1,26 @@
+COLUMN_NAME,COLUMN_DESCRIPTION
+INCIDENT_NUM,Toronto Fire Services (TFS) incident number.
+DATETIME,"Year, Month, Date of when TFS was notified of the incident"
+MINUTES_ARRIVAL,Minutes it took for the first unit to arrive (after alarm)
+MINUTES_LEAVE,Minutes it took for the first unit to leave (after arrival)
+FIRE_STATION,TFS Station where incident occurred
+FIRE_STATION_CLOSEST,Closest (by Haversine formula) TFS Station where incident occurred
+LATITUDE,Latitude (Decimal Degrees) of nearest major / minor intersection of incident
+LONGITUDE,Longitude (Decimal Degrees) of nearest major / minor intersection of incident
+MAX_TEMP,Maximum Temperature (Celsius) recorded across 3 Toronto Weather Stations for a given day
+MIN_TEMP,Minimum Temperature (Celsius) recorded across 3 Toronto Weather Stations for a given day
+MEAN_TEMP,Average Temperature (Celsius) recorded across 3 Toronto Weather Stations for a given day
+HDD,"Heating Degree Day (HDD, Celsius) recorded across 3 Toronto Weather Stations for a given day"
+CDD,"Cooling Degree Day (CDD, Celsius) recorded across 3 Toronto Weather Stations for a given day"
+RAIN_MM,Measured Rain (mm / day) recorded across 3 Toronto Weather Stations for a given day
+PRECIP_MM,Measured Precipiation (mm / day) recorded across 3 Toronto Weather Stations for a given day
+SNOW_CM,Snow on Ground (cm) recorded across 3 Toronto Weather Stations for a given day
+CAD_TYPE,First event type in CAD system of this incident
+CAD_CALL_TYPE,First call type in CAD system of this incident. Call type is a group of event types.
+FINAL_TYPE,Final incident type
+ALARM_LEVEL,Alarm level of the event
+CALL_SOURCE,Source of the call to TFS
+PERSONS_RESCUED,"Number of persons rescued, if any"
+NAME,Closest TFS Fire Station Name
+WARD_NAME,Municipality Ward Name and Number of TFS Incident
+MUN_NAME,Name of Toronto / GTA Municipality
