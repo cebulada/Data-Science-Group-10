@@ -4,7 +4,7 @@ DATETIME,"Year, Month, Day, Hour, Minute, Second of when TFS was notified of the
 MINUTES_ARRIVAL,Minutes it took for the first unit to arrive (after alarm).
 MINUTES_LEAVE,Minutes it took for the first unit to leave (after arrival).
 FIRE_STATION,Number of TFS Station where incident occurred.
-FIRE_STATION_CLOSEST,Number of closest (by Haversine formula in 02-Geopandas_and_Merging.ipynb) TFS Station where incident occurred.
+FIRE_STATION_CLOSEST,Number of closest (by smallest Haversine formula distance calculation) TFS Station where incident occurred.
 NAME,Name of column FIRE_STATION TFS Fire Station.
 ADDRESS,Address of column FIRE_STATION TFS Fire Station.
 LATITUDE_STATION,Latitude (Decimal Degrees) of column FIRE_STATION TFS Fire Station.
