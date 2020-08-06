@@ -3,7 +3,8 @@
 # Created by https://www.toptal.com/developers/gitignore/api/python
 # Edit at https://www.toptal.com/developers/gitignore?templates=python
 
-
+# block api_keys.py as it contains personal Google API keys
+api_keys.py
 
 
 ### JupyterNotebooks ###
