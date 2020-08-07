@@ -1,0 +1,17 @@
+INDEX,CODE,DESCRIPTION,COUNT,TOTAL_CALLS_RECEIVED_%,TOP_15_CALLS_RECEIVED_%
+1,89,Other Medical,538573.0,55.0%,60.0%
+2,32,Alarm System Equipment,56956.0,6.0%,6.0%
+3,31,Alarm Equipment,51192.0,5.0%,6.0%
+4,62,Vehicle Collision,49299.0,5.0%,6.0%
+5,34,Human,33320.0,3.0%,4.0%
+6,35,Human,25236.0,3.0%,3.0%
+7,66,Persons Trapped in Elevator,21346.0,2.0%,2.0%
+8,33,Human,20718.0,2.0%,2.0%
+9,22,Pot on Stove (no fire),19903.0,2.0%,2.0%
+10,24,Other Cooking/toasting/smoke/steam (No Fire),17488.0,2.0%,2.0%
+11,1,Fire,16206.0,2.0%,2.0%
+12,3,"NO LOSS OUTDOOR fire (exc: Sus.arson,vandal,child playing,recycling or dump fires)",11164.0,1.0%,1.0%
+13,50,"Power Lines Down, Arcing",10815.0,1.0%,1.0%
+14,21,"Overheat (no fire, e.g. engines, mechanical devices)",10326.0,1.0%,1.0%
+15,49,"Ruptured Water, Steam Pipe",8947.0,1.0%,1.0%
+Total,,,891489.0,,
