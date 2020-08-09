@@ -45,22 +45,22 @@ ___
 ## 3. Analysis - [GitHub Repository](https://github.com/cebulada/Data-Science-Group-10)
 
 - ### A. Data Retrieval
-  The data is retrieved in the `01-GET_DATA.ipynb` jupyter notebook.  Data is retrieved and stored in folders as multiple data types dynamically when the jupyter notebook cells are executed.
+  The data is retrieved in the `01-DATA-RETRIEVAL.ipynb` jupyter notebook.  Data is retrieved and stored in folders as multiple data types dynamically when the jupyter notebook cells are executed.
 
   Downloading and dealing with .csv and .shp files proved to be a challenge.  Data across multiple .csv files are concatenated and transformed into 1 .csv file for a given year range.
   
-  Escpecially with the .shp file (geospatial files) some additional steps had to be undertaken.  A conda virtual environment had to be setup to install the geopandas python library due to issues with the Anaconda base environment.  Details of which can be found in `02-Geopandas_and_Merging.ipynb`.  The data was transformed from a .shp file to a .csv file for compatibility with pandas.
+  Escpecially with the .shp file (geospatial files) some additional steps had to be undertaken.  A conda virtual environment had to be setup to install the geopandas python library due to issues with the Anaconda base environment.  Details of which can be found in `02-GEOPANDAS_AND_MANIPULATIONS.ipynb`.  The data was transformed from a .shp file to a .csv file for compatibility with pandas.
 
 - ### B. Data Munging / Cleaning
-  For TFS Fire Incident Data, cleaning done in `02-Geopandas_and_Merging.ipynb`, several steps were done to clean up the data.
+  For TFS Fire Incident Data, cleaning done in `02-GEOPANDAS_AND_MANIPULATIONS.ipynb`, several steps were done to clean up the data.
 
-  First, any fire incident data without latitude or longitude values are removed (`<0.005%` of the dataset).
+  First, any fire incident data with latitude or longitude values of 0 are replaced with null values (~7% of the data).
 
   Second, the TFS incident number is set as the index and any duplicated TFS incident numbers were removed (`<0.0005%` of the dataset).  This means each row will have a unique TFS Incident Number.
 
   Third, there are missing Incident Station Areas (TFS Fire Stations) that was imputed by their distance to the Latitude and Logitude of the call.  The Haversine formula was instrumental in calculating the distance to each TFS Fire Station and returning the smallest distance as the TFS Fire Station Number.
 
-  Fourth, Toronto Weather Climate data was aggregated across 3 weather stations.  Several columns were removed due to an overabundance of nulls, as seen in `01-GET_DATA.ipynb` jupyter notebook.
+  Fourth, Toronto Weather Climate data was aggregated across 3 weather stations.  Several columns were removed due to an overabundance of nulls, as seen in `01-DATA-RETRIEVAL.ipynb` jupyter notebook.
 
   Fifth, TFS Fire Locations had the number of the fire station extracted from the name and set as the index.
 
@@ -76,7 +76,9 @@ ___
 ___
 ## 4. Conclusion
 
-- ### TO BE COMPLETED...
+&nbsp;&nbsp;&nbsp;&nbsp; The initial assumption regarding one of the largest organizations providing fire services in Canada, was that majority of calls must be for fires. Surprisingly, the majority of calls to Toronto Fire Services are not for fires. Group 10’s analysis has disproved this initial assumption and revealed other meaningful insights concerning the Toronto Fire Services. As a well-rounded organization providing services for all hazardous emergencies, the majority of their calls are for other medical reasons in which these calls are primarily made by ambulances.
+
+&nbsp;&nbsp;&nbsp;&nbsp; The number of total calls expected in the current month can be predicted using the number of total calls in previous months, allowing the organization to prepare and make better more effective decisions. The analysis concluded that attributes such as time and weather did not impact the calls as believed. Regardless of what time of the year, day of the week, rain, or shine, hot or cold, the Toronto Fire Services get the same amount of calls 365 days a year.
 ___
 ## 5. Data Column Details
 
